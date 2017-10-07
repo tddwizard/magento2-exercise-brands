@@ -1,0 +1,20 @@
+{
+    "name": "tddwizard/exercise-brands",
+    "description": "Integration Test Exercise: Brands",
+    "authors": [
+        {
+            "name": "Mage2Gen",
+            "email": "info@mage2gen.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "TddWizard\\ExerciseBrands\\": ""
+        },
+        "files": [
+            "registration.php"
+        ]
+    }
+}
