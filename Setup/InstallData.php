@@ -46,7 +46,7 @@ class InstallData implements InstallDataInterface
                 'source' => '',
                 'global' => 0,
                 'visible' => true,
-                'required' => true,
+                'required' => false,
                 'user_defined' => true,
                 'default' => null,
                 'searchable' => true,
