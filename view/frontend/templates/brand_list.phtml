@@ -1,0 +1,16 @@
+<?php
+/** @var \TddWizard\ExerciseBrands\Block\BrandList $block */
+?>
+<div id="exercise_brands_list">
+    <h3><?php echo $block->escapeHtml(__("Other products of %1", $block->getBrand())) ?></h3>
+    <ul>
+        <?php foreach ($block->getProducts() as $product): ?>
+            <?php /** @var \Magento\Catalog\Model\Product $product */ ?>
+            <li>
+                <a href="<?php echo $block->escapeHtmlAttr($product->getProductUrl()) ?>">
+                    <?php echo $block->escapeHtml($product->getName());?>
+                </a>
+            </li>
+        <?php endforeach; ?>
+    </ul>
+</div>
