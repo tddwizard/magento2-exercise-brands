@@ -9,6 +9,9 @@
     ],
     "minimum-stability": "dev",
     "require": {},
+    "require-dev": {
+        "tddwizard/magento2-fixtures" : "0.1.1"
+    },
     "autoload": {
         "psr-4": {
             "TddWizard\\ExerciseBrands\\": ""
