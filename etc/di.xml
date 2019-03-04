@@ -2,5 +2,14 @@
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
     <preference for="TddWizard\ExerciseBrands\Api\ProductBrandRepositoryInterface"
-                type="TddWizard\ExerciseBrands\Model\ProductBrandRepository" />
+                type="TddWizard\ExerciseBrands\Model\ProductBrandRepository"/>
+    <type name="Magento\Sales\Api\OrderItemRepositoryInterface">
+        <plugin name="brand_extension_attributes" type="TddWizard\ExerciseBrands\Plugin\OrderItemRepositoryPlugin"/>
+    </type>
+    <type name="Magento\Quote\Api\CartItemRepositoryInterface">
+        <plugin name="brand_extension_attributes" type="TddWizard\ExerciseBrands\Plugin\QuoteItemRepositoryPlugin"/>
+    </type>
+    <type name="Magento\Quote\Model\Quote\Item\ToOrderItem">
+        <plugin name="brand_extension_attributes" type="TddWizard\ExerciseBrands\Plugin\OrderItemConvertPlugin" />
+    </type>
 </config>

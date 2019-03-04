@@ -9,7 +9,6 @@ use TddWizard\Fixtures\Catalog\ProductFixtureRollback;
 
 /**
  * @magentoAppArea frontend
- * @magentoDbIsolation enabled
  */
 class ProductViewTest extends AbstractController
 {
